@@ -1,0 +1,25 @@
+using System;
+using System.Collections.Generic;
+
+class Program
+{
+	static void Main()
+	{
+		Dictionary<string,int> d = new Dictionary<string, int>()
+		{
+			{"jishan",1},
+			{"sun",2},
+			{"rasel",3},
+			{"halim",4}
+		};
+
+		// Store Keys in a List
+		List<string> listKeys = new List<string>(d.Keys);
+		// Loop Through list
+		foreach(string k in listKeys)
+		{
+			Console.WriteLine("{0} = {1}", k , d[k]);
+		}
+
+	}
+}

@@ -1,0 +1,29 @@
+// List Versus Dictionary.txt
+
+using System;
+using System.Collections.Generic;
+
+class Program
+{
+	static void Main()
+	{
+		Example e = new Example();
+		Console.WriteLine(e.GetValue());
+	}
+}
+
+class Example
+{
+	Dictionary<int, int> _d = new Dictionary<int, int>();
+	{
+		{1,1},
+		{2,3},
+		{4,5},
+		{6,10}
+	};
+
+	public int GetValue()
+	{
+		return _d[2]; // Example Only
+	}
+}
